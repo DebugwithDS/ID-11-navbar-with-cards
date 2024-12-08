@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #0d1117;
+      color: #ffffff;
+    }
+
+    .header {
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1a1f26;
+    }
+
+    .header a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 0.8rem;
+      position: relative;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    .header a:hover {
+      background: linear-gradient(90deg, #6c63ff, #1a1f26);
+      color: #ffffff;
+      border: 2px solid #6c63ff;
+      padding: 0.4rem 0.6rem;
+      border-radius: 5px;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .header .btn {
+      background-color: #6c63ff;
+      color: #ffffff;
+      padding: 0.6rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .pricing-section {
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .pricing-section h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .pricing-section p {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .toggle {
+      background-color: #1a1f26;
+      padding: 0.6rem;
+      display: inline-block;
+      border-radius: 30px;
+    }
+
+    .toggle span {
+      color: #ffffff;
+      margin: 0 1rem;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      
+    }
+
+    .card {
+      margin-top: 20px;
+      background-color: #1a1f26;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5), -10px -10px 20px rgba(255, 255, 255, 0.1);
+      text-align: center;
+      position: relative;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      transition: 0.3s;
+    }
+
+    .card .icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+      text-align: left;
+    }
+
+    .card ul li {
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .card ul li i {
+      color: #6c63ff;
+      margin-right: 0.5rem;
+    }
+
+    .card .btn {
+      display: inline-block;
+      padding: 0.6rem 1.5rem;
+      background: linear-gradient(135deg, #00ffcc, #ff00ff);
+      border: none;
+      color: #ffffff;
+      font-size: 1rem;
+      border-radius: 30px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .card .btn:hover {
+      box-shadow: 0 0 15px #ff00ff;
+    }
+
+    .popular {
+      background-color: #262c36;
+      border: 2px solid #6c63ff;
+    }
+
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <h1>LOGO</h1>
+  <nav>
+    <a href="#">Features</a>
+    <a href="#">Pricing</a>
+    <a href="#">Solutions</a>
+    <a href="#">Contact</a>
+    <a class="btn" href="#">Try for Free</a>
+  </nav>
+</header>
+
+<section class="pricing-section">
+  <h1>Choose the Plan That Best Fits Your Needs</h1>
+  <p>Our company offers a range of plans  for different business sizes and requirements. AI-powered features to streamline your workflows and boost productivity.</p>
+
+  <div class="toggle">
+    <span>Monthly</span>
+    <span>Yearly <small>(Save 15%)</small></span>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="icon"><i class="fas fa-box"></i></div>
+      <h2>Starter</h2>
+      <h3>$49 <small>per month</small></h3>
+      <ul>
+        <li><i class="fas fa-check"></i> Up to 3 users</li>
+        <li><i class="fas fa-check"></i> Basic CRM features</li>
+        <li><i class="fas fa-check"></i> Email support</li>
+        <li><i class="fas fa-check"></i> AI insights</li>
+        <li><i class="fas fa-check"></i> Mobile access</li>
+      </ul>
+      <a class="btn" href="#">Get Started</a>
+    </div>
+
+    <div class="card popular">
+      <div class="icon"><i class="fas fa-crown"></i></div>
+      <h2>Professional</h2>
+      <h3>$99 <small>per month</small></h3>
+      <ul>
+        <li><i class="fas fa-check"></i> Up to 10 users</li>
+        <li><i class="fas fa-check"></i> Advanced CRM features</li>
+        <li><i class="fas fa-check"></i> Priority support</li>
+        <li><i class="fas fa-check"></i> AI insights</li>
+        <li><i class="fas fa-check"></i> Mobile access</li>
+      </ul>
+      <a class="btn" href="#">Get Started</a>
+    </div>
+
+    <div class="card">
+      <div class="icon"><i class="fas fa-briefcase"></i></div>
+      <h2>Business</h2>
+      <h3>$179 <small>per month</small></h3>
+      <ul>
+        <li><i class="fas fa-check"></i> Up to 50 users</li>
+        <li><i class="fas fa-check"></i> All CRM features</li>
+        <li><i class="fas fa-check"></i> Dedicated support</li>
+        <li><i class="fas fa-check"></i> AI insights</li>
+        <li><i class="fas fa-check"></i> Mobile access</li>
+      </ul>
+      <a class="btn" href="#">Get Started</a>
+    </div>
+
+    <div class="card">
+      <div class="icon"><i class="fas fa-building"></i></div>
+      <h2>Enterprise</h2>
+      <h3>Custom</h3>
+      <ul>
+        <li><i class="fas fa-check"></i> Unlimited users</li>
+        <li><i class="fas fa-check"></i> Custom CRM features</li>
+        <li><i class="fas fa-check"></i> 24/7 support</li>
+        <li><i class="fas fa-check"></i> AI insights</li>
+        <li><i class="fas fa-check"></i> Mobile access</li>
+      </ul>
+      <a class="btn" href="#">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
